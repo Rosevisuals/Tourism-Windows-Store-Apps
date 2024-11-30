@@ -1,0 +1,375 @@
+﻿<Page
+    x:Class="Tourism.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tourism"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="DeepSkyBlue"
+          >
+        
+        <Pivot Title="Explore"
+               FontSize="60"
+               Foreground="black">
+            <PivotItem Header="Home">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+                    <StackPanel>
+                        <TextBlock Text="LET US TAKE YOU TO YOUR DREAM DESTINATIONS"
+                                   FontSize="40"
+                                   VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   Margin="50"/>
+                        <TextBox Header="Search destination"
+                                 FontSize="40"
+                                 Foreground="black"
+                                 FontFamily="Lucid"
+                                 Width="800"
+                                 CornerRadius="20"
+                                 PlaceholderText="Search destination"
+                                 PlaceholderForeground="Gainsboro" />
+                        <TextBlock Text="Best Offers!"
+                                   FontSize="40"
+                                   HorizontalAlignment="Center"
+                                   Margin="30"/>
+                        <Grid Height="300">
+                            <Hub >
+                                <HubSection >
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="200,0,0,0"/>
+                                            <TextBlock Text="iTALY"
+                           FontSize="40"
+                           Margin="200,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+                                <HubSection>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="50,0,0,0"
+                       />
+                                            <TextBlock Text="Greece"
+                           FontSize="40"
+                           Margin="50,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+                                <HubSection>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="50,0,0,0"
+                        />
+                                            <TextBlock Text="Greece"
+                           FontSize="40"
+                           Margin="50,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+
+                            </Hub>
+                        </Grid>
+
+                        <Grid Height="500">
+                            <Hub>
+                                <HubSection>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="200,0,0,0"/>
+                                            <TextBlock Text="iTALY"
+                           FontSize="40"
+                           Margin="200,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+                                <HubSection>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="50,0,0,0"
+                          />
+                                            <TextBlock Text="Greece"
+                           FontSize="40"
+                           Margin="50,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+                                <HubSection>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="Assets\9444761.jpg"
+                       MaxHeight="400"
+                       MaxWidth="300"
+                       Margin="50,0,0,0"
+                         />
+                                            <TextBlock Text="Greece"
+                           FontSize="40"
+                           Margin="50,0,0,0"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </HubSection>
+                            </Hub>
+                        </Grid>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Destinations">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Explore Popular  Destinations "
+                                   FontSize="50"
+                                   HorizontalAlignment="Center"
+                                   Margin="20"/>
+                       
+                                    <StackPanel Margin="100,0,0,0">
+                                        <Image Source="Assets\9444761.jpg"
+                                               MaxHeight="300"
+                                               MaxWidth="400"/>
+                                        <TextBlock Text="1. Paris,France"
+                               Foreground="black"
+                               FontSize="30"/>
+                                        <TextBlock Text="Known as the city of light, Paris is renowned for its art, fashion gastronomy and culture. "
+                               FontSize="25"/>
+                                        <TextBlock Text="Don't miss the Eiffel Tower and the Louvre Museum"
+                               FontSize="25"/>
+                                    </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                  MaxHeight="300"
+                                  MaxWidth="400"/>
+                            <TextBlock Text="2. Tokyo,Japan"
+                                       FontSize="30"/>
+                            <TextBlock Text="Tokyo blends traditional culture with modern technology. "
+                                       FontSize="25"/>
+                            <TextBlock Text="Visit the historic temples, experience the bustling streets of Shibuya and enjoy delicious sushi."
+                                       FontSize="25"/>
+                        </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="3. New York City,USA"
+                                       FontSize="30"/>
+                            <TextBlock Text="The Big Apple is known for its iconic skyline, vibrant culture and diverse attractions."
+                                       FontSize="25"/>
+                            <TextBlock Text="Explore Times Square, Central Park and the Statue of Liberty."
+                                       FontSize="25"/>
+                        </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="4. Sydney,Australia"
+                                       FontSize="30"/>
+                            <TextBlock Text="Sydney is famous for its Sydney Opera House and Harbour Bridge."
+                                       FontSize="25"/>
+                            <TextBlock Text="Enjoy the beautiful beaches and vibrant art scenes."
+                                       FontSize="25"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Activities">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Popular Activities"
+                                   FontSize="50"
+                                   HorizontalAlignment="Center"
+                                   Margin="20"/>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="1. Hiking"
+                                        FontSize="30"/>
+                            <TextBlock Text="Explore breathtaking trails and enjoy the great outdoors while hiking through stunning landscapes."
+                                       FontSize="25"/>
+                           
+                        </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                  MaxWidth="400"/>
+                            <TextBlock Text="2. Beach Relaxation"
+                                       FontSize="30"/>
+                            <TextBlock Text="Unwind on teh soft sands of beautiful beaches and enjoy the sound of the waves."
+                                       FontSize="25"/>
+
+                        </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                  MaxHeight="300"
+                                  MaxWidth="400"/>
+                            <TextBlock Text="3. Cultural Tours"
+                                       FontSize="30"/>
+                            <TextBlock Text="Discover the rich history and traditions of the region through guided cultural tours."
+                                       FontSize="25"/>
+
+                        </StackPanel>
+                        <StackPanel Margin="100,0,0,0">
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="4. Food Tasting"
+                                      FontSize="30"/>
+                            <TextBlock Text="Indulge in local cuisines and flavors with unique tastes."
+                                       FontSize="25"/>
+
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Travel Tips">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock Text="Essential Travel Tips"
+                                   FontSize="50"
+                                   HorizontalAlignment="Center"
+                                   Margin="20"/>
+                        <StackPanel>
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="1. Always check visa requirements"
+                                       FontSize="30"/>
+                            <TextBlock Text="Before travelling ensure you have the correct visa for your destination"
+                                       FontSize="25"/>
+                            <TextBlock Text="Check for any specific entry requirements."
+                                       FontSize="25"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="2. Take caution of any valuable items"
+                                       FontSize="30"/>
+                            <TextBlock Text="Before travelling check whether you have all your luggages cleared through the right ports."
+                                       FontSize="25"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="3. Learn basic phrases of the local language"
+                                       FontSize="30"/>
+                            <TextBlock Text="Knowing a few words or phrases in the local language can enhance your travel experience and help you connect with locals."
+                                       FontSize="25"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <Image Source="Assets\9444761.jpg"
+                                   MaxHeight="300"
+                                   MaxWidth="400"/>
+                            <TextBlock Text="4. Respect local customs and traditions"
+                                       FontSize="30"/>
+                            <TextBlock Text="Each destination has its customs. Familiarize yourself with the local traditions."
+                                       FontSize="25"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Gallery">
+                <StackPanel>
+                    <TextBlock Text="Image Gallery"
+                               FontSize="50"
+                               HorizontalAlignment="Center"
+                               Margin="20"/>
+                    <Grid Height="400">
+                        <Hub>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+                                               MaxHeight="300"
+                                               MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+                                                   FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+                   MaxHeight="300"
+                   MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+                       FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+                   MaxHeight="300"
+                   MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+                       FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                        </Hub>
+                    </Grid>
+                    <Grid Height="400">
+                        <Hub>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+                            MaxHeight="300"
+                            MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+                                FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+MaxHeight="300"
+MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+    FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                            <HubSection>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Image Source="Assets\9444761.jpg"
+MaxHeight="300"
+MaxWidth="400"/>
+                                        <TextBlock Text="Stunning Mountain View"
+    FontSize="30"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </HubSection>
+                        </Hub>
+                    </Grid>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Contact">
+                <StackPanel>
+                    <TextBlock Text="Welcome to the contact page "/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
